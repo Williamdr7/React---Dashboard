@@ -1,0 +1,40 @@
+.leadCardContainer {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #efefef;
+  margin: 0 16px;
+}
+.companyInfo {
+  display: inline-flex;
+  align-items: center;
+  width: 80%;
+}
+
+.companyImgContainer {
+  display: inline-flex;
+  align-items: center;
+
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  width: 32px;
+  height: 32px;
+}
+
+.companyImg {
+  width: 24px;
+  margin: auto;
+}
+
+.companyName {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.leadValue {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: auto;
+  color: #0065ff;
+}

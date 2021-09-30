@@ -1,0 +1,176 @@
+.menuContainer {
+  &:first-child {
+    margin-top: 16px;
+  }
+}
+.logoContainer {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 24px;
+  img {
+    width: 110px;
+    height: 32px;
+  }
+}
+.arrowBox {
+  width: 100%;
+  display: flex;
+}
+.menuBox {
+  background-color: #d3d3d3;
+  border-bottom: 1px solid #555;
+  z-index: 100000;
+  height: 100%;
+}
+
+.proSidebarBoxClosed {
+  position: relative;
+  @media (max-width: 769px) {
+    position: fixed;
+    height: 0;
+    width: 0;
+    animation: go-in 0.5s;
+    display: none;
+  }
+  @keyframes go-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+.proSidebarBoxClosed {
+  position: relative;
+  @media (max-width: 769px) {
+    position: fixed;
+    height: 100%;
+    width: 70%;
+    animation: go-in 0.5s;
+    display: flex;
+  }
+  @keyframes go-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+.hamburgerIcon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.sideMenuHeader {
+  height: 71px;
+  border-bottom: 1px solid rgba(173, 173, 173, 0.2);
+}
+.closeMenuIcon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.imageBox {
+  background-repeat: no-repeat;
+  background-size: 50%;
+  transform: translate(0, -10%);
+  width: 200px;
+  height: 100px;
+}
+
+.pro-item-content {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+}
+.menuItem {
+  margin: 4px auto;
+  height: 40px;
+  border-radius: 6px;
+  width: 80%;
+  &.closed {
+    width: auto;
+    transform: scaleX(0.8);
+    img {
+      transform: scaleX(1.2);
+    }
+  }
+  &.selected {
+    background-color: #0065ff;
+  }
+}
+
+.menuFixedDesktop {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  height: 72px;
+  position: fixed;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.optionsMenu {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 25px;
+  height: 70%;
+  border-radius: 10px;
+  align-self: center;
+  padding: 15px;
+}
+
+.arrowIcon {
+  position: absolute;
+  cursor: pointer;
+  bottom: 32px;
+  right: 32px;
+}
+
+.tabIcon {
+  color: #1d2c4b !important;
+}
+.selectedTabIcon {
+  color: #fff !important;
+  filter: brightness(0) invert(1);
+}
+
+.tabLink {
+  color: #1d2c4b !important;
+}
+.selectedTabLink {
+  color: #fff !important;
+}
+
+.selectSource {
+  margin-left: 25px;
+  transform: scale(1.4);
+  @media (max-width: 769px) {
+    display: none;
+  }
+}
+
+.rightOptions {
+  width: 130px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pro-inner-item {
+  height: 25px !important;
+}

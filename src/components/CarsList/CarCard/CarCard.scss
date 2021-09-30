@@ -1,0 +1,78 @@
+.cardContainer {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+  padding: 8px 0;
+  position: relative;
+}
+.carImage {
+  width: 96px;
+  height: 72px;
+  margin-right: 16px;
+  border-radius: 4px;
+}
+.descriptionText {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+
+  &.fuel {
+    display: list-item;
+    margin-left: 8px;
+    list-style-type: disc;
+    list-style-position: inside;
+
+    &.price {
+      font-weight: 600;
+      color: #0065ff;
+    }
+    &::marker {
+      color: #a3a3a3;
+    }
+  }
+}
+.fluxContainer {
+  display: inline-flex;
+}
+
+.modelText {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.carStatus {
+  position: absolute;
+  right: 16px;
+  font-size: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.status {
+  display: inline-grid;
+  align-items: center;
+  text-align: center;
+  height: 20px;
+  padding: 4px 8px;
+  border-radius: 500px;
+  margin: auto;
+  font-weight: 600;
+
+  &.done {
+    color: #fff;
+    background-color: #ffab00;
+  }
+  &.scheduled {
+    background-color: #cce8fe;
+  }
+}
+
+.publishedDate {
+  color: #666666;
+  margin-top: 10px;
+}
+
+.descriptionContainer {
+  display: flex;
+}

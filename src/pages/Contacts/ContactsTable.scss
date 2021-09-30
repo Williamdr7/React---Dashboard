@@ -1,0 +1,85 @@
+.contactContainer {
+  max-width: 100%;
+  padding: 31px 24px 24px 24px;
+}
+.tableContainer {
+  background-color: #fff;
+  border-radius: 8px;
+}
+.tableHeader {
+  border-bottom: 1px solid #efefef;
+  max-width: 100%;
+  display: grid;
+  padding: 16px;
+  grid-template-columns: 6fr 3fr 3fr;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+.tableHeaderMenu {
+  display: grid;
+  align-items: center;
+  margin-bottom: 32px;
+  grid-template-columns: 1fr 9fr 2fr;
+}
+.contacSearchInput {
+  width: 275px;
+}
+
+.tableOptions {
+  display: flex;
+  width: 240px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactTitle {
+  font-size: 24px;
+  color: #1d2c4b;
+  font-weight: 600;
+  margin-right: 16px;
+}
+.paginate {
+  display: flex;
+
+  & .Mui-selected {
+    background-color: #0065ff !important;
+    color: #fff !important;
+  }
+  & .Mui-disabled {
+    display: none;
+  }
+}
+.paginateContainer {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  margin-left: 16px;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.dataInfoContainer {
+  margin-left: auto;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+.selectPage {
+  height: 28px;
+  width: 40px;
+
+  & .MuiOutlinedInput-input {
+    padding: 0;
+  }
+  & .MuiSelect-iconOutlined {
+    right: 0;
+  }
+}
+
+.contactFormContainer {
+  width: 50%;
+}

@@ -1,0 +1,27 @@
+.dashboardContainer {
+  max-width: 100%;
+  padding: 31px 24px 24px 24px;
+}
+
+.leadBlock {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 9fr 2.9fr;
+  width: 100%;
+  @media (max-width: 1280px) {
+    grid-template-columns: 12fr 12fr;
+  }
+  @media (max-width: 1080px) {
+    grid-template-columns: 1fr;
+  }
+}
+.carsLists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  @media (max-width: 1280px) {
+    grid-template-columns: 1fr;
+  }
+  align-items: center;
+  justify-content: space-between;
+}

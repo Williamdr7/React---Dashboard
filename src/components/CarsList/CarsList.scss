@@ -1,0 +1,20 @@
+.carsListContainer {
+  margin-top: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0 16px;
+  width: calc(100% - 32px);
+  max-height: 344px;
+  position: relative;
+}
+
+.carsCardsContainer {
+  overflow-y: auto;
+  max-height: 280px;
+}
+
+.carsListTitle {
+  height: 54px;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 16px;
+}
